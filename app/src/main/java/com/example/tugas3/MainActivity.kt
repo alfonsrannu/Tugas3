@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btn2.setOnClickListener {
-            Toast.makeText(this, "ON CLICK", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, binding.editMessage.text.toString(), Toast.LENGTH_SHORT).show()
 
         }
     }
