@@ -31,8 +31,7 @@ class MainActivity : AppCompatActivity() {
                 editText.setText("") // Hapus teks saat fokus
             }
         }
-
-
+        
         val logoutText: TextView = findViewById(R.id.LogOuttext)
         logoutText.setOnClickListener {
             val intent = Intent(this, Login::class.java)

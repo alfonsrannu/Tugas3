@@ -42,20 +42,19 @@
         android:id="@+id/LogOuttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:fontFamily="sans-serif-black"
         android:text="LOG OUT"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
-
+        app:layout_constraintVertical_bias="0.049" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
