@@ -2,6 +2,8 @@ package com.example.tugas3
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,5 +30,31 @@ class Login : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+
+        val EmaileditText: EditText = findViewById(R.id.editTextTextEmailAddress)
+        EmaileditText.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                EmaileditText.setText("") // Hapus teks saat fokus
+            }
+        }
+
+        val PasswordeditText: EditText = findViewById(R.id.editTextTextPassword)
+        PasswordeditText.setOnFocusChangeListener{_, hasFocus ->
+            if (hasFocus) {
+                PasswordeditText.setText("") // Hapus teks saat fokus
+            }
+        }
+
+        val NewText: TextView = findViewById(R.id.textView3)
+        NewText.setOnClickListener {
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+
+            // Opsional: Menutup MainActivity jika logout
+            finish()
+        }
+
+
     }
 }
