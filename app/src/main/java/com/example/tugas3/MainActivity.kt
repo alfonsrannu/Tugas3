@@ -41,5 +41,15 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.btnShare.setOnClickListener {
+            val shareIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, binding.editMessage.text.toString()) // Pesan yang akan dibagikan
+                type = "text/plain" // Jenis data yang akan dibagikan
+            }
+            startActivity(Intent.createChooser(shareIntent, "Bagikan melalui")) // Menampilkan aplikasi-aplikasi berbagi pesan
+        }
+
+
     }
 }

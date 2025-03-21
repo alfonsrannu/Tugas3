@@ -66,6 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
+        android:clickable="true"
+        android:focusable="true"
         android:text="Forgot Password?"
         android:textColor="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"

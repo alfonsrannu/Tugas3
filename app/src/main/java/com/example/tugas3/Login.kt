@@ -55,6 +55,15 @@ class Login : AppCompatActivity() {
             finish()
         }
 
+        val FPText: TextView = findViewById(R.id.textView2)
+        FPText.setOnClickListener {
+            val intent = Intent(this, Forget::class.java)
+            startActivity(intent)
+
+            // Opsional: Menutup MainActivity jika logout
+            finish()
+        }
+
 
     }
 }

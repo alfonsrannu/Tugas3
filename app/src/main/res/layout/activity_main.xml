@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="242dp"
-        android:layout_height="50dp"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
         android:backgroundTint="#2196F3"
         android:text="START"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.603" />
 
     <EditText
         android:id="@+id/editMessage"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895" />
+        app:layout_constraintVertical_bias="0.939" />
 
     <TextView
         android:id="@+id/LogOuttext"
@@ -82,6 +82,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.175" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#2196F3"
+        android:text="SHARE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:layout_constraintVertical_bias="0.053" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
