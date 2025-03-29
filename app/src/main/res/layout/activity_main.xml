@@ -95,6 +95,17 @@
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintVertical_bias="0.053" />
 
+    <Button
+        android:id="@+id/btnTugas4"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#2196F3"
+        android:text="Tugas 4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:layout_constraintVertical_bias="0.313" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

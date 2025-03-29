@@ -21,6 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnTugas4.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btn2.setOnClickListener {
             Toast.makeText(this, binding.editMessage.text.toString(), Toast.LENGTH_SHORT).show()
         }
