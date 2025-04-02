@@ -32,20 +32,6 @@ class Login : AppCompatActivity() {
         }
 
 
-        val EmaileditText: EditText = findViewById(R.id.editTextTextEmailAddress)
-        EmaileditText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                EmaileditText.setText("") // Hapus teks saat fokus
-            }
-        }
-
-        val PasswordeditText: EditText = findViewById(R.id.editTextTextPassword)
-        PasswordeditText.setOnFocusChangeListener{_, hasFocus ->
-            if (hasFocus) {
-                PasswordeditText.setText("") // Hapus teks saat fokus
-            }
-        }
-
         val NewText: TextView = findViewById(R.id.textView3)
         NewText.setOnClickListener {
             val intent = Intent(this, Register::class.java)
