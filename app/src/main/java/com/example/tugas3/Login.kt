@@ -32,23 +32,16 @@ class Login : AppCompatActivity() {
         }
 
 
-        val NewText: TextView = findViewById(R.id.textView3)
-        NewText.setOnClickListener {
+        binding.textView3.setOnClickListener {
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
-
-            // Opsional: Menutup MainActivity jika logout
-            finish()
         }
 
-        val FPText: TextView = findViewById(R.id.textView2)
-        FPText.setOnClickListener {
+        binding.textView2.setOnClickListener {
             val intent = Intent(this, Forget::class.java)
             startActivity(intent)
-
-            // Opsional: Menutup MainActivity jika logout
-            finish()
         }
+
 
 
     }

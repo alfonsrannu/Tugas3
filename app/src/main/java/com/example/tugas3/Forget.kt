@@ -30,19 +30,8 @@ class Forget : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val EmaileditText: EditText = findViewById(R.id.edtEmail)
-        EmaileditText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                EmaileditText.setText("") // Hapus teks saat fokus
-            }
-        }
 
-        val editText: EditText = findViewById(R.id.edtSetPassword)
-        editText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editText.setText("") // Hapus teks saat fokus
-            }
-        }
+
 
 
 

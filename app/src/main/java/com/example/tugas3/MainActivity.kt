@@ -30,21 +30,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, binding.editMessage.text.toString(), Toast.LENGTH_SHORT).show()
         }
 
-        val editText: EditText = findViewById(R.id.editMessage)
-        editText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editText.setText("") // Hapus teks saat fokus
-            }
-        }
-        
-        val logoutText: TextView = findViewById(R.id.LogOuttext)
-        logoutText.setOnClickListener {
+        binding.LogOuttext.setOnClickListener {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
-
-            // Opsional: Menutup MainActivity jika logout
-            finish()
         }
+        
+
 
         binding.btnShare.setOnClickListener {
             val shareIntent = Intent().apply {
