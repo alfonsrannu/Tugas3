@@ -33,6 +33,7 @@
         android:gravity="center"
         android:inputType="textPersonName"
         android:hint="Masukkan Pesan"
+        android:textColorHint="@color/black"
         android:textColor="#03243E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +93,7 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editMessage"
         app:layout_constraintVertical_bias="0.092" />
