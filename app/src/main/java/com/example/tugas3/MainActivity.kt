@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
-        
 
 
         binding.btnShare.setOnClickListener {
