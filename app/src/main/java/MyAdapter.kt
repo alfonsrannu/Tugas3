@@ -13,7 +13,7 @@ class MyAdapter (private val namaList: ArrayList<ItemData>) : RecyclerView.Adapt
 
 
     class MyViewHolder (itemData: View) : RecyclerView.ViewHolder (itemData) {
-        val img :ImageView = itemData.findViewById(R.id.imageView5)
+        val img  :ImageView = itemData.findViewById(R.id.imageView5)
         val nama : TextView = itemData.findViewById(R.id.textView6)
         val desc : TextView = itemData.findViewById(R.id.textView7)
     }

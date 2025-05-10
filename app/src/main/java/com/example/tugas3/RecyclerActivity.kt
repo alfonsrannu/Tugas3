@@ -25,8 +25,13 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+
         binding = ActivityRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -120,6 +125,21 @@ class RecyclerActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.Logout -> {
+                startActivity(Intent(this, Login::class.java))
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 }
